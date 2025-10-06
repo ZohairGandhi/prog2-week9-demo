@@ -10,3 +10,6 @@ class Group:
 
     def sell(self, tickets: int) -> None:
         self.remaining_capacity -= tickets
+
+    def __str__(self) -> str:
+        return f"{self.group_type} seats (${self.price})"
